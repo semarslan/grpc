@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package common;
+
+option java_multiple_files = true;
+option java_package = "com.semarslan.grpcservice.models";
+
+message Car {
+  string make = 1;
+  int32 year = 2;
+  string model = 3;
+  BodyStyle body_style = 4;
+}
+
+enum  BodyStyle {
+  SEDAN = 0;
+  HATCHBACK = 1;
+}
